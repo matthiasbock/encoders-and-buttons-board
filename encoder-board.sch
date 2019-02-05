@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:encoder-board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Rotary_Encoder_Switch SW1
-U 1 1 5C583BFF
-P 1850 1500
-F 0 "SW1" H 1850 1850 50  0000 C CNN
-F 1 "Bourns PEC11R-4220F-S0024" H 1850 1200 50  0000 C CNN
-F 2 "" H 1700 1660 50  0001 C CNN
-F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 1850 1760 50  0001 C CNN
-	1    1850 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 1400 1200 1400
 $Comp
@@ -148,17 +138,6 @@ F 3 "" H 3350 5600 50  0001 C CNN
 	1    3300 5750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Rotary_Encoder_Switch SW2
-U 1 1 5C58D06D
-P 3600 1500
-F 0 "SW2" H 3600 1850 50  0000 C CNN
-F 1 "Bourns PEC11R-4220F-S0024" H 3600 1200 50  0000 C CNN
-F 2 "" H 3450 1660 50  0001 C CNN
-F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 3600 1760 50  0001 C CNN
-	1    3600 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 1400 2950 1400
 Text Label 2950 1400 0    50   ~ 0
@@ -195,17 +174,6 @@ Wire Wire Line
 Connection ~ 2850 1250
 Wire Wire Line
 	2850 1250 2850 1200
-$Comp
-L Device:Rotary_Encoder_Switch SW3
-U 1 1 5C58D246
-P 1850 2550
-F 0 "SW3" H 1850 2900 50  0000 C CNN
-F 1 "Bourns PEC11R-4220F-S0024" H 1850 2250 50  0000 C CNN
-F 2 "" H 1700 2710 50  0001 C CNN
-F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 1850 2810 50  0001 C CNN
-	1    1850 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 2450 1200 2450
 Text Label 1200 2450 0    50   ~ 0
@@ -250,6 +218,7 @@ F 0 "SW4" H 3600 2900 50  0000 C CNN
 F 1 "Bourns PEC11R-4220F-S0024" H 3600 2250 50  0000 C CNN
 F 2 "" H 3450 2710 50  0001 C CNN
 F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 3600 2810 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/mechanische-drehgeber/7377767/" H 3600 2550 50  0001 C CNN "Supplier Page"
 	1    3600 2550
 	1    0    0    -1  
 $EndComp
@@ -573,74 +542,48 @@ Text Label 2100 6850 0    50   ~ 0
 SW7-S
 Text Label 2100 6950 0    50   ~ 0
 SW8-S
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 5C5D8BD4
-P 8050 5400
-F 0 "J1" H 8129 5442 50  0000 L CNN
-F 1 "Connector" H 8129 5351 50  0000 L CNN
-F 2 "" H 8050 5400 50  0001 C CNN
-F 3 "~" H 8050 5400 50  0001 C CNN
-	1    8050 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7850 5200 7500 5200
+	7850 5050 7500 5050
 Wire Wire Line
-	7850 5300 7500 5300
+	7850 5150 7500 5150
 Wire Wire Line
-	7850 5400 7500 5400
+	7850 5250 7500 5250
 Wire Wire Line
-	7850 5500 7500 5500
-Wire Wire Line
-	7850 5600 7500 5600
-Wire Wire Line
-	7500 5200 7500 5100
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C5EA42A
-P 7500 5100
-F 0 "#PWR?" H 7500 4950 50  0001 C CNN
-F 1 "+3V3" H 7515 5273 50  0000 C CNN
-F 2 "" H 7500 5100 50  0001 C CNN
-F 3 "" H 7500 5100 50  0001 C CNN
-	1    7500 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 5600 7500 5700
+	7500 5350 7500 5550
 $Comp
 L power:GND #PWR?
 U 1 1 5C5ED4F3
-P 7500 5700
-F 0 "#PWR?" H 7500 5450 50  0001 C CNN
-F 1 "GND" H 7505 5527 50  0000 C CNN
-F 2 "" H 7500 5700 50  0001 C CNN
-F 3 "" H 7500 5700 50  0001 C CNN
-	1    7500 5700
+P 7500 5550
+F 0 "#PWR?" H 7500 5300 50  0001 C CNN
+F 1 "GND" H 7505 5377 50  0000 C CNN
+F 2 "" H 7500 5550 50  0001 C CNN
+F 3 "" H 7500 5550 50  0001 C CNN
+	1    7500 5550
 	1    0    0    -1  
 $EndComp
-Text Label 7500 5300 0    50   ~ 0
+Text Label 7500 5050 0    50   ~ 0
 ~PL
 $Comp
-L 74xx:74LS165 U?
+L 74xx:74LS165 U1
 U 1 1 5C5F0B1F
 P 6950 2400
-F 0 "U?" H 6700 3200 50  0000 C CNN
+F 0 "U1" H 6700 3200 50  0000 C CNN
 F 1 "74LS165" H 7200 3200 50  0000 C CNN
-F 2 "" H 6950 2400 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6950 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS165" H 6950 2400 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/zahler-ic/6632713/" H 6950 2400 50  0001 C CNN "Supplier Page"
 	1    6950 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS165 U?
+L 74xx:74LS165 U2
 U 1 1 5C5F0B73
 P 8700 2400
-F 0 "U?" H 8450 3200 50  0000 C CNN
+F 0 "U2" H 8450 3200 50  0000 C CNN
 F 1 "74LS165" H 8950 3200 50  0000 C CNN
-F 2 "" H 8700 2400 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8700 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS165" H 8700 2400 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/zahler-ic/6632713/" H 8700 2400 50  0001 C CNN "Supplier Page"
 	1    8700 2400
 	1    0    0    -1  
 $EndComp
@@ -718,48 +661,22 @@ Text Label 7900 2800 0    50   ~ 0
 Wire Wire Line
 	6450 3000 6150 3000
 Wire Wire Line
-	6450 3100 6300 3100
-Wire Wire Line
-	6300 3100 6300 3200
-$Comp
-L power:GND #PWR?
-U 1 1 5C60A4E6
-P 6300 3200
-F 0 "#PWR?" H 6300 2950 50  0001 C CNN
-F 1 "GND" H 6305 3027 50  0000 C CNN
-F 2 "" H 6300 3200 50  0001 C CNN
-F 3 "" H 6300 3200 50  0001 C CNN
-	1    6300 3200
-	1    0    0    -1  
-$EndComp
+	6450 3100 6150 3100
 Text Label 6150 3000 0    50   ~ 0
 CLK
 Wire Wire Line
 	8200 3000 7900 3000
 Wire Wire Line
-	8200 3100 8050 3100
-Wire Wire Line
-	8050 3100 8050 3200
-$Comp
-L power:GND #PWR?
-U 1 1 5C60AA6A
-P 8050 3200
-F 0 "#PWR?" H 8050 2950 50  0001 C CNN
-F 1 "GND" H 8055 3027 50  0000 C CNN
-F 2 "" H 8050 3200 50  0001 C CNN
-F 3 "" H 8050 3200 50  0001 C CNN
-	1    8050 3200
-	1    0    0    -1  
-$EndComp
+	8200 3100 7900 3100
 Text Label 7900 3000 0    50   ~ 0
 CLK
 Wire Wire Line
 	9200 1800 9700 1800
 Text Label 9500 1800 0    50   ~ 0
 DOUT
-Text Label 7500 5400 0    50   ~ 0
+Text Label 7500 5250 0    50   ~ 0
 CLK
-Text Label 7500 5500 0    50   ~ 0
+Text Label 7500 5150 0    50   ~ 0
 DOUT
 Wire Wire Line
 	6450 1900 6050 1900
@@ -835,4 +752,154 @@ Wire Notes Line
 	10150 1050 5350 1050
 Wire Notes Line
 	5350 1050 5350 4100
+$Comp
+L Device:C_Small C2
+U 1 1 5C66CF67
+P 9450 3400
+F 0 "C2" H 9542 3446 50  0000 L CNN
+F 1 "100nF" H 9542 3355 50  0000 L CNN
+F 2 "" H 9450 3400 50  0001 C CNN
+F 3 "~" H 9450 3400 50  0001 C CNN
+	1    9450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C66CFD1
+P 9450 3300
+F 0 "#PWR?" H 9450 3150 50  0001 C CNN
+F 1 "+3V3" H 9465 3473 50  0000 C CNN
+F 2 "" H 9450 3300 50  0001 C CNN
+F 3 "" H 9450 3300 50  0001 C CNN
+	1    9450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C66CFFC
+P 9450 3500
+F 0 "#PWR?" H 9450 3250 50  0001 C CNN
+F 1 "GND" H 9455 3327 50  0000 C CNN
+F 2 "" H 9450 3500 50  0001 C CNN
+F 3 "" H 9450 3500 50  0001 C CNN
+	1    9450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C66D28E
+P 5650 3400
+F 0 "C1" H 5742 3446 50  0000 L CNN
+F 1 "100nF" H 5742 3355 50  0000 L CNN
+F 2 "" H 5650 3400 50  0001 C CNN
+F 3 "~" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C66D295
+P 5650 3300
+F 0 "#PWR?" H 5650 3150 50  0001 C CNN
+F 1 "+3V3" H 5665 3473 50  0000 C CNN
+F 2 "" H 5650 3300 50  0001 C CNN
+F 3 "" H 5650 3300 50  0001 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C66D29B
+P 5650 3500
+F 0 "#PWR?" H 5650 3250 50  0001 C CNN
+F 1 "GND" H 5655 3327 50  0000 C CNN
+F 2 "" H 5650 3500 50  0001 C CNN
+F 3 "" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6100 6250 9150 6250
+Wire Notes Line
+	9150 6250 9150 4600
+Wire Notes Line
+	9150 4600 6100 4600
+Wire Notes Line
+	6100 4600 6100 6250
+Text Notes 7450 6100 0    50   ~ 0
+PMOD header
+$Comp
+L Device:Rotary_Encoder_Switch SW3
+U 1 1 5C5B3ED9
+P 1850 2550
+F 0 "SW3" H 1850 2900 50  0000 C CNN
+F 1 "Bourns PEC11R-4220F-S0024" H 1850 2250 50  0000 C CNN
+F 2 "" H 1700 2710 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 1850 2810 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/mechanische-drehgeber/7377767/" H 1850 2550 50  0001 C CNN "Supplier Page"
+	1    1850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW2
+U 1 1 5C5B3F41
+P 3600 1500
+F 0 "SW2" H 3600 1850 50  0000 C CNN
+F 1 "Bourns PEC11R-4220F-S0024" H 3600 1200 50  0000 C CNN
+F 2 "" H 3450 1660 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 3600 1760 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/mechanische-drehgeber/7377767/" H 3600 1500 50  0001 C CNN "Supplier Page"
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 5C5B3FBD
+P 1850 1500
+F 0 "SW1" H 1850 1850 50  0000 C CNN
+F 1 "Bourns PEC11R-4220F-S0024" H 1850 1200 50  0000 C CNN
+F 2 "" H 1700 1660 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/13ec/0900766b813ecfbe.pdf" H 1850 1760 50  0001 C CNN
+F 4 "https://de.rs-online.com/web/p/mechanische-drehgeber/7377767/" H 1850 1500 50  0001 C CNN "Supplier Page"
+	1    1850 1500
+	1    0    0    -1  
+$EndComp
+Text Notes 6400 6200 0    50   ~ 0
+https://reference.digilentinc.com/reference/pmod/specification
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5C5B61D6
+P 8050 5150
+F 0 "J?" H 8129 5142 50  0000 L CNN
+F 1 "PMOD" H 8129 5051 50  0000 L CNN
+F 2 "" H 8050 5150 50  0001 C CNN
+F 3 "~" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C5EA42A
+P 7300 5300
+F 0 "#PWR?" H 7300 5150 50  0001 C CNN
+F 1 "+3V3" H 7315 5473 50  0000 C CNN
+F 2 "" H 7300 5300 50  0001 C CNN
+F 3 "" H 7300 5300 50  0001 C CNN
+	1    7300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5350 7500 5350
+Wire Wire Line
+	7850 4950 7500 4950
+Text Label 7500 4950 0    50   ~ 0
+~CE
+Wire Wire Line
+	7850 5450 7300 5450
+Wire Wire Line
+	7300 5450 7300 5300
+Text Label 6150 3100 0    50   ~ 0
+~CE
+Text Label 7900 3100 0    50   ~ 0
+~CE
 $EndSCHEMATC
